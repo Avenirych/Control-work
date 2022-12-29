@@ -26,7 +26,7 @@ string[] Massiv(int size)
 
 string[] NewMassiv(string[] arr)
 {
-    string newmassiv = "";
+    string newmassiv = " ";
     foreach (string el in arr)
     {
         if (el.Length <= 3)
