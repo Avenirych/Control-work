@@ -22,3 +22,7 @@ string[] Massiv(int size)
         arr[i] = Console.ReadLine();    
     }
     return arr;
+Console.WriteLine("Entre the array length : ");
+string[] arr_1 = Massiv(int.Parse(Console.ReadLine()));
+Console.WriteLine("Base array: ");
+Print(arr_1);
