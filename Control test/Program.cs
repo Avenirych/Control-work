@@ -22,7 +22,23 @@ string[] Massiv(int size)
         arr[i] = Console.ReadLine();    
     }
     return arr;
+}
+
+string[] NewMassiv(string[] arr)
+{
+    string newmassiv = "";
+    foreach (string el in arr)
+    {
+        if (el.Length <= 3)
+            newmassiv += el + " ";        
+    }  
+    string[] NewArr = newmassiv.Split(' ');
+    return NewArr;      
+}
 Console.WriteLine("Entre the array length : ");
 string[] arr_1 = Massiv(int.Parse(Console.ReadLine()));
 Console.WriteLine("Base array: ");
 Print(arr_1);
+string[] new_arr = NewMassiv(arr_1);
+Console.WriteLine("Result array: ");
+Print(new_arr);
